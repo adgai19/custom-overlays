@@ -33,9 +33,9 @@ inputs :final: prev: {
     };
   };
 
-  customPkgs = with prev;{
-    inherit (system) ageEnc ageDec ageFile battery json2struct;
-  };
+  # customPkgs = with prev;{
+  #   inherit  ageEnc ageDec ageFile battery json2struct;
+  # };
 
   customVimPlugins = {
     inc-rename-nvim = prev.vimUtils.buildVimPlugin {
